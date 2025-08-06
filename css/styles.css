@@ -85,6 +85,10 @@ p {
   margin-top: var(--72);
 }
 
+.mar-top-48 {
+  margin-top: var(--48);
+}
+
 .main-content-wrapper {
   flex: 1 0 auto;
 }
@@ -134,7 +138,8 @@ p {
 
 .portfolio-container,
 .about-container,
-.project-container {
+.project-container,
+.contact-container {
   padding: 0px var(--left-right-padding);
 }
 
@@ -143,7 +148,7 @@ p {
   font-weight: 800;
   border-top: 5px solid;
   padding-top: var(--6);
-  padding-bottom: var(--24);
+  padding-bottom: var(--48);
 }
 
 .card-container {
@@ -215,15 +220,19 @@ p {
   transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateZ(0deg) skew(0deg);
   opacity: 0;
   transform-style: preserve-3d;
-  transition: transform 0.4s cubic-bezier(0.75, 0.82, 0.165, 1),
-    opacity 0.4s ease-in;
+  transition: transform 0.45s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   font-size: 1.5rem;
   margin-top: var(--6);
   color: var(--darkgrey); /* or use var(--midblue) */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .card:hover .card-arrow {
-  transform: translate3d(20px, 0, 0) scale3d(1, 1, 1) rotateZ(0deg) skew(0deg);
+  transform: translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateZ(0deg) skew(0deg);
   opacity: 1;
 }
 
@@ -264,6 +273,169 @@ p {
   object-fit: cover;
   border-radius: 5px;
   overflow: hidden;
+}
+
+/* Contact */
+
+.contact-details {
+  display: flex;
+  width: 100%;
+  gap: var(--48);
+}
+
+.contact-form {
+  box-shadow: 0px 0px 20px rgba(121, 128, 149, 0.3);
+  background-color: var(--lightwhite);
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  width: 100%;
+}
+
+label {
+  color: var(--midblue);
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.email-input {
+  border: 1px solid var(--softblue);
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  color: var(--darkgrey);
+  font-size: 1rem;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  background-color: var(--lightwhite);
+}
+
+.email-input:focus {
+  outline: none;
+  border: 1px solid var(--midblue);
+  color: var(--darkgrey);
+}
+
+textarea {
+  border: 1px solid var(--softblue);
+  border-radius: 4px;
+  padding: 10px;
+  height: 150px;
+  margin-top: 10px;
+  color: var(--darkgrey);
+  font-size: 1rem;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  max-width: 100%;
+  resize: vertical;
+  background-color: var(--lightwhite);
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--midblue);
+  color: var(--darkgrey);
+}
+
+.contact-btn {
+  background-color: var(--lightwhite);
+  border: 1px solid var(--midblue);
+  border-radius: 6px;
+  padding: 10px 75px;
+  color: var(--midblue);
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 5px;
+  align-self: center;
+}
+
+.contact-btn:hover {
+  border-color: var(--blackgrey);
+  background-color: var(--blackgrey);
+  cursor: pointer;
+  color: var(--softblue);
+  font-weight: 300;
+  text-align: center;
+}
+
+.contact-subhead {
+  display: flex;
+  gap: var(--12);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: var(--24);
+  width: 100%;
+}
+.contact-type {
+  border-top: solid 1px rgba(121, 128, 149, 0.3);
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--12);
+  flex-wrap: wrap;
+  padding: var(--24) var(--12) var(--24) var(--12);
+}
+.contact-title {
+  font-size: 1.2rem;
+}
+
+.contact-icon {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.contact-info {
+  font-size: 1.2rem;
+}
+
+.contact-socials {
+  gap: var(--12);
+  display: flex;
+  border-top: solid 1px rgba(121, 128, 149, 0.3);
+  border-radius: 6px;
+  padding: var(--24) var(--12) var(--24) var(--12);
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-socials .social-icons {
+  background-color: var(--lightwhite);
+  border: 0.5px solid var(--darkgrey);
+  width: 100%;
+  padding: 20px 20px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scale-up {
+  transform: scale(1.5);
+}
+
+.contact-socials a:hover {
+  border-color: var(--darkgrey);
+  background-color: #121212;
+  transition: all 0.3s ease;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
 }
 /* Projects */
 
@@ -327,6 +499,12 @@ p {
   position: relative;
   justify-content: center;
   align-items: center;
+}
+
+.ee_gaming_wistia_embed {
+  aspect-ratio: 1/2.1;
+  width: 100%;
+  border: none;
 }
 .landing-container {
   position: relative;
@@ -506,12 +684,6 @@ p {
   aspect-ratio: 9/18.2;
 }
 
-.ee-email-viz-2 {
-  position: relative;
-  width: 350px;
-  aspect-ratio: 9/18.2;
-}
-
 .ee_wistia_embed {
   position: absolute;
   top: 0%; /* Distance from top of phone */
@@ -528,9 +700,10 @@ p {
   left: 50%; /* Distance from left edge */
   transform: translateX(-50%); /* Shift back by half its width */
   width: 90%; /* Width of screen area */
-  height: 98%; /* Height of screen area */
+  height: 97%; /* Height of screen area */
   border: none;
-  border-radius: 30px;
+  border-radius: 8%;
+  background-color: black;
 }
 
 .ee-emails-container {
@@ -649,6 +822,265 @@ p {
   border-radius: 6px;
 }
 
+/* Covid 19 updates */
+
+.covid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: var(--6);
+  grid-row-gap: var(--6);
+}
+
+.covid-video {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+/* VFS */
+
+.vfs-stills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: var(--6);
+  grid-row-gap: var(--6);
+}
+
+.vfs-stills img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.vfs-stills img.wide {
+  grid-column: 1 / -1;
+}
+
+.vfs-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: var(--6);
+  padding: var(--12);
+  background-color: var(--blackgrey);
+  gap: 3px;
+  border-radius: 6px;
+}
+
+.vfs-row img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* BT Campaigns */
+
+.bf-mms {
+  width: 350px;
+  aspect-ratio: 9/18.2;
+}
+
+.bf-mms img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-blk {
+  background-color: #121212;
+}
+
+.video-sinch-container-bt {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  flex: 1;
+}
+
+.wistia_embed_bt {
+  width: 100%; /* Width of screen area */
+  height: 100%; /* Height of screen area */
+  border: none;
+}
+
+/* BT TV Recontracting */
+
+.bttv-intro {
+  display: flex;
+  gap: var(--48);
+}
+.bttv-intro-img {
+  width: 100%;
+  display: flex;
+  max-width: 600px;
+}
+
+.bttv-text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.bttv-intro-img img {
+  width: 100%;
+  display: flex;
+  object-fit: contain;
+}
+
+.bttv-dt-email {
+  display: flex;
+  border-radius: var(--12);
+  overflow: hidden;
+  margin-left: -15px;
+}
+
+.bttv-dt-email-2 {
+  display: flex;
+  border-radius: var(--12);
+  overflow: hidden;
+  margin-right: -15px;
+}
+
+.bttv-dt-email-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.bttv-mb-email {
+  position: relative;
+  width: 350px;
+  aspect-ratio: 9 / 18.2;
+  display: flex;
+}
+
+.bttv-mb-scroll {
+  position: absolute;
+  top: 2%;
+  width: 90%;
+  height: 96%;
+  overflow-y: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  overflow-y: scroll;
+  border-radius: 20px;
+}
+.bttv-mb-scroll::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.bttv-mb-email-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pointer-event {
+  pointer-events: none;
+}
+
+.bttv-direct-mail {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.bttv-direct-mail img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+/* Interior Design */
+
+.contain-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: var(--12);
+}
+
+.img-split {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: var(--6);
+}
+
+.img-50 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: var(--6);
+}
+
+.img-cover {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-cover-2 {
+  width: 70%;
+}
+
+.border-rad {
+  border-radius: 6px;
+}
+
+/* Mecca Cola */
+
+.mc-table-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  /* shorthand that means exactly the same as: grid-template-columns: 1fr 1fr 1fr; */
+  gap: var(--24);
+  align-items: start;
+}
+
+.mc-social-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--12);
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: solid 0.5px var(--softblue);
+}
+.mc-social-posts img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mc-social-banners {
+  display: flex;
+  height: 100%;
+}
+.mc-split-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--12);
+}
+
+.img-contain {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 /* Other projects */
 
 .other-projects-container {
@@ -682,9 +1114,9 @@ p {
   bottom: 0;
   left: 0;
   width: 0; /* Start with no width */
-  height: 1px; /* Line thickness */
-  background-color: var(--midblue); /* Line color */
-  transition: width 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Ease in-out animation */
+  height: 2px; /* Line thickness */
+  background-color: var(--darkgrey); /* Line color */
+  transition: width 0.25s cubic-bezier(0.5, 0.15, 0.25, 1); /* Ease in-out animation */
 }
 
 .other-card:hover::after {
@@ -698,7 +1130,7 @@ p {
   overflow: hidden;
   border-radius: 5px;
   flex: 1; /* Takes up remaining space, leaving room for title */
-  aspect-ratio: 16/9;
+  aspect-ratio: 2/1;
   box-shadow: 0px 0px 10px rgba(121, 128, 149, 0.15);
 }
 
@@ -716,6 +1148,10 @@ p {
   text-decoration: none;
   font-weight: 400;
   font-size: 1.2rem;
+}
+
+.other-card:hover .other-project-name {
+  color: var(--darkgrey);
 }
 /* Slider */
 
