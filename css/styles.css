@@ -8,6 +8,7 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1450,24 +1451,24 @@ textarea:focus {
     width: 100%;
     display: inline-block;
     padding: var(--24) 0px;
-  }
-
-  .li-nav a:hover {
-    color: var(--lightwhite);
-    animation: borderFade 0.4s forwards;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
   }
 
   @keyframes borderFade {
-    0% {
-      border-color: var(--lightwhite);
-    }
-
+    0%,
     20% {
       border-color: var(--lightwhite);
     }
     100% {
       border-color: var(--darkgrey);
     }
+  }
+
+  .li-nav a:active {
+    color: var(--lightwhite);
+    border: 2px solid var(--lightwhite);
+    animation: borderFade 0.4s forwards;
   }
 
   /* About */

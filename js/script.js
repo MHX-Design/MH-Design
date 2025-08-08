@@ -53,6 +53,7 @@ function toggleMenu() {
   content.classList.toggle("create-margin");
 }
 
+
 // Close menu when navigation links are clicked
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".ul-nav a");
@@ -85,4 +86,7 @@ document.addEventListener("click", function (event) {
     }
   }
 });
+
+
+
 
