@@ -10,17 +10,31 @@
     <title>Musa Hussain | MH Portfolio</title>
   </head>
   <body>
-    <!-- Navigation -->
+   <!-- Navigation -->
     <nav class="nav-container">
-      <div class="menu">
-        <div class="logo-container">
-          <a href = "index.html" class="logo-header"><img src="assets/Logo85.svg"></a>
+             
+        <div class="nav-wrapper">
+  <div class="logo-container">
+    <a href="/index.html" class="logo-header">
+      <img src="/assets/Logo85.svg" alt="Logo">
+    </a>
+  </div>
+
+  <div id="menu" class="menu">
+    <ul class="ul-nav">
+      <li class="li-nav"><a href="/index.html">Portfolio</a></li>
+      <li class="li-nav"><a href="/about.html">About</a></li>
+      <li class="li-nav"><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="hamburger-container">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <ul class="ul-nav">
-          <li class="li-nav"><a href="index.html"> Portfolio</a></li>
-          <li class="li-nav"><a href="about.html"> About</a></li>
-          <li class="li-nav"><a href="contact.html"> Contact</a></li>
-        </ul>
       </div>
     </nav>
 
@@ -28,10 +42,10 @@
     <section class="portfolio-container">
       <h1 class="dark-grey page-title">Portfolio</h2>
 
-      <div class="card-container">
+     <div class="card-container">
 
   <a href="/projects/ee-gaming.html" class="card">
-    <div class="card-img"><img src="assets/Project tiles/Gaming-min.jpg" alt="EE Gaming" /></div>
+    <div class="card-img"><img src="assets/Project tiles/Gaming-min.jpg" alt="EE Gaming campaign image" /></div>
     <div class="card-text">
       <div class="card-title">
         <h3 class="card-heading dark-grey">EE Gaming</h3> 
@@ -42,7 +56,7 @@
   </a>
 
   <a href="/projects/digital-voice.html" class="card">
-    <div class="card-img"><img src="assets/Project tiles/DV_Tile-min.jpg" alt="image" /></div>
+    <div class="card-img"><img src="assets/Project tiles/DV_Tile-min.jpg" alt="Digital Voice explainer video thumbnail" /></div>
     <div class="card-text">
       <div class="card-title">
         <h3 class="card-heading dark-grey">Digital Voice</h3>
@@ -53,7 +67,7 @@
   </a>
 
   <a href="/projects/bt-campaigns.html" class="card">
-    <div class="card-img"><img src="assets/Project tiles/BT-min.jpg" alt="image" /></div>
+    <div class="card-img"><img src="assets/Project tiles/BT-min.jpg" alt="BT campaign visuals" /></div>
     <div class="card-text">
       <div class="card-title">
         <h3 class="card-heading dark-grey">BT Campaigns</h3>
@@ -64,7 +78,7 @@
   </a>
 
   <a href="/projects/itv-showreel.html" class="card">
-    <div class="card-img"><img src="assets/Project tiles/ITV-min.jpg" alt="image" /></div>
+    <div class="card-img"><img src="assets/Project tiles/ITV-min.jpg" alt="ITV broadcast animation showreel still" /></div>
     <div class="card-text">
       <div class="card-title">
         <h3 class="card-heading dark-grey">ITV Showreel</h3>
@@ -75,7 +89,7 @@
   </a>
 
   <a href="/projects/bt-tv-recontract.html" class="card">
-    <div class="card-img"><img src="assets/Project tiles/BTRCW-min.jpg" alt="image" /></div>
+    <div class="card-img"><img src="assets/Project tiles/BTRCW-min.jpg" alt="BT TV re-contracting campaign creative" /></div>
     <div class="card-text">
       <div class="card-title">
         <h3 class="card-heading dark-grey">BT TV Re-contracting</h3>
@@ -86,7 +100,7 @@
   </a>
 
   <a href="/projects/ee-campaigns.html" class="card">
-    <div class="card-img"><img src="assets/Project tiles/EE-min.jpg" alt="image" /></div>
+    <div class="card-img"><img src="assets/Project tiles/EE-min.jpg" alt="EE branded campaign creative" /></div>
     <div class="card-text">
       <div class="card-title">
         <h3 class="card-heading dark-grey">EE Campaigns</h3>
@@ -97,7 +111,7 @@
   </a>
 
   <a href="/projects/view-from-stormont.html" class="card">
-    <div class="card-img"><img src="assets/Project tiles/VFS-min.jpg" alt="image" /></div>
+    <div class="card-img"><img src="assets/Project tiles/VFS-min.jpg" alt="View from Stormont title sequence visuals" /></div>
     <div class="card-text">
       <div class="card-title">
         <h3 class="card-heading dark-grey">View from Stormont</h3>
@@ -108,7 +122,7 @@
   </a>
 
   <a href="/projects/covid-19-updates.html" class="card">
-    <div class="card-img"><img src="assets/Project tiles/Covid-min.jpg" alt="image" /></div>
+    <div class="card-img"><img src="assets/Project tiles/Covid-min.jpg" alt="Covid-19 animated government update" /></div>
     <div class="card-text">
       <div class="card-title">
         <h3 class="card-heading dark-grey">Covid-19 Updates</h3>
@@ -119,7 +133,7 @@
   </a>
 
   <a href="/projects/mecca-cola.html" class="card">
-    <div class="card-img"><img src="assets/Project tiles/MC-min.jpg" alt="image" /></div>
+    <div class="card-img"><img src="assets/Project tiles/MC-min.jpg" alt="Mecca Cola branding and packaging visuals" /></div>
     <div class="card-text">
       <div class="card-title">
         <h3 class="card-heading dark-grey">Mecca Cola</h3>
@@ -130,7 +144,7 @@
   </a>
 
   <a href="/projects/interior-design.html" class="card">
-    <div class="card-img"><img src="assets/Project tiles/Interior-min.jpg" alt="image" /></div>
+    <div class="card-img"><img src="assets/Project tiles/Interior-min.jpg" alt="Interior design for corporate kitchen and dining space" /></div>
     <div class="card-text">
       <div class="card-title">
         <h3 class="card-heading dark-grey">Corporate Let</h3>
@@ -141,6 +155,7 @@
   </a>
 
 </div>
+
 
     </section>
 
@@ -157,5 +172,7 @@
       </div>
       <p class="copyright"> © 2025 Musa Hussain. All Rights Reserved</p>
      </footer>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>

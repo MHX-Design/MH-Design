@@ -44,3 +44,24 @@ document.addEventListener("DOMContentLoaded", function () {
   // Listen for window resize to recalculate arrow states
   window.addEventListener("resize", updateArrowStates);
 });
+
+//  Mobile nav script >
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  const content = document.getElementById("content");
+  menu.classList.toggle("active");
+  content.classList.toggle("create-margin");
+}
+
+// Close menu when navigation links are clicked
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".ul-nav a");
+  const menu = document.getElementById("menu");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      // Remove the active class to close the menu
+      menu.classList.remove("active");
+    });
+  });
+});

@@ -12,17 +12,31 @@
   <body>
     
     <main class="main-content-wrapper">
-    <!-- Navigation -->
+  <!-- Navigation -->
     <nav class="nav-container">
-      <div class="menu">
-        <div class="logo-container">
-          <a href = "index.html" class="logo-header"><img src="assets/Logo85.svg"></a>
+             
+        <div class="nav-wrapper">
+  <div class="logo-container">
+    <a href="/index.html" class="logo-header">
+      <img src="/assets/Logo85.svg" alt="Logo">
+    </a>
+  </div>
+
+  <div id="menu" class="menu">
+    <ul class="ul-nav">
+      <li class="li-nav"><a href="/index.html">Portfolio</a></li>
+      <li class="li-nav"><a href="/about.html">About</a></li>
+      <li class="li-nav"><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="hamburger-container">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <ul class="ul-nav">
-          <li class="li-nav"><a href="index.html"> Portfolio</a></li>
-          <li class="li-nav"><a href="about.html"> About</a></li>
-          <li class="li-nav"><a href="contact.html"> Contact</a></li>
-        </ul>
       </div>
     </nav>
 
@@ -40,12 +54,16 @@
      
        <div class="p-about">
     
-      <p class="mar-bottom-12 dark-grey">I'm a multi-disciplinary designer who brings ideas to life and solves real-world problems through impactful design. With many years of experience, I've had the privilege of working on a diverse range of projects, from producing bold brand identities to delivering multi-channel initiatives for brands like BT, EE, and ITV. My approach combines creativity and strategy to deliver designs that not only look great, but also engage and resonate deeply with audiences.</p>
+      <p class="mar-bottom-12 dark-grey">I'm a multi-disciplinary designer who transforms ideas into impactful, real-world solutions. With experience across branding, digital, and multi-channel campaigns, I've worked with leading brands like BT, EE, and ITV, delivering bold identities and high-performing initiatives.</p>
       
-       <p class="mar-bottom-12 dark-grey">I excel in creative direction, overseeing end-to-end creative processes, and collaborating across disciplines to push boundaries. Specialising in driving innovation through design, I conceptualise ideas, prototype seamless user experiences, and utilise a range of tools—including motion graphics—to deliver compelling design outcomes. Every project is purposefully crafted to inspire, connect, and create meaningful impact.
+       <p class="mar-bottom-12 dark-grey">My approach combines creativity with strategy, ensuring designs are compelling and deeply resonate with audiences. I excel in creative direction, overseeing and producing projects from concept to delivery while collaborating across disciplines to push boundaries.
 
 </p>
-      <p class="dark-grey">With a detail-oriented mindset and a relentless passion for creativity, I’m committed to exceeding expectations and bringing ambitious visions to life.
+
+ <p class="mar-bottom-12 dark-grey">Alongside my creative expertise, I combine a designer's eye with a developer's understanding to design and build responsive, front-end experiences <i>(I designed and coded this website)</i>. I focus on creating digital products that are as functional and user-friendly as they are visually engaging.
+
+</p>
+      <p class="dark-grey">I bring ideas to life through concept development, motion graphics, and interactive media. Detail-oriented and creatively driven, I strive to exceed expectations and turn ambitious visions into reality.
 
 </p>
     
@@ -71,5 +89,6 @@
       </div>
       <p class="copyright"> © 2025 Musa Hussain. All Rights Reserved</p>
      </footer>
+     <script src="/js/script.js"></script>
   </body>
 </html>
