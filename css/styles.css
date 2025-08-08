@@ -1525,6 +1525,10 @@ textarea:focus {
     flex-direction: column;
   }
 
+  .email-input {
+    padding: 15px;
+  }
+
   /* BT TV Re-Contracting */
 
   .bttv-direct-mail img {
