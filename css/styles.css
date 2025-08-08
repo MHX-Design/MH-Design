@@ -142,6 +142,9 @@ p {
 .logo-header img {
   width: 85px;
   height: 85px;
+  display: block;
+  font-size: 0;
+  line-height: 0;
 }
 
 .hamburger-container {
