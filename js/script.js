@@ -65,3 +65,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Close menu when clicking outside of it
+document.addEventListener("click", function (event) {
+  const menu = document.getElementById("menu");
+  const content = document.getElementById("content");
+  const hamburgerButton = document.querySelector(".hamburger"); // Adjust selector as needed
+
+  // Check if the menu is currently active
+  if (menu.classList.contains("active")) {
+    // Check if the click is outside the menu and not on the hamburger button
+    if (
+      !menu.contains(event.target) &&
+      hamburgerButton &&
+      !hamburgerButton.contains(event.target)
+    ) {
+      menu.classList.remove("active");
+      content.classList.remove("create-margin");
+    }
+  }
+});
+

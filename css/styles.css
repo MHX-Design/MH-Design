@@ -349,7 +349,6 @@ textarea {
   color: var(--darkgrey);
   font-size: 1rem;
   font-weight: 300;
-  transition: all 0.3s ease;
   max-width: 100%;
   resize: vertical;
   background-color: var(--lightwhite);
@@ -901,7 +900,7 @@ textarea:focus {
   display: flex;
   width: 100%;
   margin-bottom: var(--6);
-  padding: var(--12);
+  padding: var(--6);
   background-color: var(--blackgrey);
   gap: 3px;
   border-radius: 6px;
@@ -909,6 +908,7 @@ textarea:focus {
 
 .vfs-row img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -943,6 +943,13 @@ textarea:focus {
   width: 100%; /* Width of screen area */
   height: 100%; /* Height of screen area */
   border: none;
+}
+
+.bt-phone-upgrades-container {
+  display: flex;
+  gap: var(--24);
+  align-items: center;
+  justify-content: center;
 }
 
 /* BT TV Recontracting */
@@ -1093,12 +1100,12 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   background-color: white;
-  border: solid 0.5px var(--softblue);
 }
 .mc-social-posts img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border: solid 0.5px var(--softblue);
 }
 
 .mc-social-banners {
@@ -1117,6 +1124,25 @@ textarea:focus {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.mc-img-split {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: var(--6);
+  justify-content: center;
+}
+
+.img-70 {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.max-1200 {
+  max-width: 1200px;
 }
 /* Other projects */
 
@@ -1326,6 +1352,20 @@ textarea:focus {
   .contact-info {
     font-size: 1rem;
   }
+
+  .contact-form {
+    padding: 40px 50px;
+  }
+
+  /* BT Campaigns */
+
+  .bt-phone-upgrades-container {
+    gap: var(--12);
+  }
+
+  .video-sinch-container-bt {
+    width: 100%;
+  }
 }
 
 /* Screen size: Tablet 768px */
@@ -1480,8 +1520,101 @@ textarea:focus {
     display: flex;
     flex-direction: column;
   }
+
+  /* BT TV Re-Contracting */
+
+  .bttv-direct-mail img {
+    width: 100%;
+  }
+
+  .bttv-intro {
+    flex-direction: column;
+  }
+
+  /* BT Campaigns */
+
+  .bt-phone-upgrades-container {
+    gap: var(--6);
+  }
+
+  /* EE Campaigns */
+  .ee-email-drone {
+    width: 60%;
+  }
+
+  .ee-mb-email {
+    width: 45%;
+  }
+  .video-sinch-container {
+    width: 100%;
+    display: flex;
+    background-color: #03a4ad;
+    border-radius: 10px;
+  }
+  .wistia_embed_fttp {
+    height: 40vh; /* Height of screen area */
+  }
+
+  /* Mecca Cola */
+  .img-70 {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  .mc-table-grid {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .mc-social-posts {
+    gap: var(--6);
+  }
+
+  .banner-70 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  /* Other Projects */
+  .other-projects-container {
+    padding: 0px 5vw;
+  }
+  /* Covid */
+  .covid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Interior Design */
+  .img-cover-2 {
+    width: 100%;
+  }
+
+  /* VFS */
+  .vfs-row {
+    padding: 3px;
+  }
 }
 
 /* Mobile 570px */
 @media (max-width: 570px) {
+  /* Contact */
+  .contact-form {
+    padding: 30px 30px;
+  }
+
+  /* EE Campaigns */
+
+  .phone-upgrades-container {
+    flex-direction: column;
+  }
+
+  .wistia_embed_fttp {
+    height: 30vh; /* Height of screen area */
+  }
+
+  /* BT Campaigns */
+
+  .bt-phone-upgrades-container {
+    flex-direction: column;
+  }
 }
