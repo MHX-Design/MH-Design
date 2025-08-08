@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256"><svg version="1.1" id="SvgjsSvg1004" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#363636;}
+	.st1{fill:none;stroke:#FBFCFF;stroke-width:15;}
+</style>
+<path class="st0" d="M16,0h224c8.8,0,16,7.2,16,16v224c0,8.8-7.2,16-16,16H16c-8.8,0-16-7.2-16-16V16C0,7.2,7.2,0,16,0z"></path>
+<g>
+	<path class="st1" d="M127.7,128l-61.2,80H27.7V48h38.8L127.7,128z"></path>
+	<path class="st1" d="M128.3,128l61.2,80h38.8V48h-38.8L128.3,128z"></path>
+</g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
