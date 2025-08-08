@@ -1601,6 +1601,11 @@ textarea:focus {
   .vfs-row {
     padding: 3px;
   }
+
+  /* Footer */
+  .footer .social-icons {
+    width: 60px;
+    height: 60px;
 }
 
 /* Mobile 570px */
