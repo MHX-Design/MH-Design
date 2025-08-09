@@ -1,1 +1,10 @@
-Options +Multiviews
+RewriteEngine On
+
+# Handle subdirectories - remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ $1.html [L,QSA]
+
+# Redirect .html to extensionless (prevents duplicate content)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ /%1? [R=301,L]
