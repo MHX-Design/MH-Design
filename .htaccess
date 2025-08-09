@@ -1,11 +1,15 @@
 RewriteEngine On
 
-# Handle files in subdirectories first
+# Remove .html extension for any file (including in subdirectories)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-RewriteRule ^(.+)$ $1.html [L]
+RewriteRule ^([^/]+)/([^/]+)/?$ $1/$2.html [L]
 
-# Redirect .html URLs to clean URLs
+# Remove .html extension for root level files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Redirect .html URLs to clean versions
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.+?)\.html[\s?] [NC]
 RewriteRule ^ /%1? [R=301,L]
