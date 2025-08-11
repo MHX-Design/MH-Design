@@ -371,7 +371,7 @@ textarea:focus {
   padding: 10px 75px;
   color: var(--midblue);
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   margin-top: 5px;
   align-self: center;
 }
@@ -381,7 +381,6 @@ textarea:focus {
   background-color: var(--blackgrey);
   cursor: pointer;
   color: var(--softblue);
-  font-weight: 300;
   text-align: center;
 }
 
@@ -1468,7 +1467,21 @@ textarea:focus {
     }
   }
 
-  .li-nav a:active {
+  .li-nav a:hover {
+    color: var(--lightwhite);
+    border: 2px solid var(--lightwhite);
+    animation: borderFade 0.4s forwards;
+  }
+
+  .li-nav a.mobile-clicked {
+    color: var(--lightwhite);
+    border: 2px solid var(--lightwhite);
+    animation: borderFade 0.4s forwards;
+  }
+
+  /* Make sure the hover state works on touch devices */
+  .li-nav a:active,
+  .li-nav a:focus {
     color: var(--lightwhite);
     border: 2px solid var(--lightwhite);
     animation: borderFade 0.4s forwards;
