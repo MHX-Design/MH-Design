@@ -22,7 +22,7 @@ const projectsData = [
   {
     slug: "itv-showreel",
     title: "ITV Showreel",
-    image: "../assets/Project tiles/ITV-min.jpg",
+    image: "../assets/Project tiles/itv.webp",
     alt: "ITV Showreel montage featuring broadcast and set design highlights",
   },
   {
@@ -46,7 +46,7 @@ const projectsData = [
   {
     slug: "covid-19-updates",
     title: "Covid-19 Updates",
-    image: "../assets/Project tiles/Covid-min.jpg",
+    image: "../assets/Project tiles/covid-tile-min.jpg",
     alt: "Broadcast graphics and UI for Covid-19 updates across UK channels",
   },
   {
