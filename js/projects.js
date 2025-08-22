@@ -4,7 +4,7 @@ const projectsData = [
   {
     slug: "ee-gaming",
     title: "EE Gaming",
-    image: "../assets/Project tiles/Gaming-min.jpg",
+    image: "../assets/Project tiles/gaming.webp",
     alt: "EE Gaming campaign hero image featuring gaming visuals and branding",
   },
   {
@@ -16,7 +16,7 @@ const projectsData = [
   {
     slug: "bt-campaigns",
     title: "BT Campaigns",
-    image: "../assets/Project tiles/BT-min.jpg",
+    image: "../assets/Project tiles/bt.webp",
     alt: "BT campaign visual showcasing mobile and broadband branding elements",
   },
   {
