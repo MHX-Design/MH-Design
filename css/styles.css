@@ -1372,6 +1372,12 @@ textarea:focus {
 
 /* Screen size: Tablet 768px */
 @media (max-width: 768px) {
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+  }
+
   :root {
     --left-right-padding: 5vw;
     --48: 24px;
