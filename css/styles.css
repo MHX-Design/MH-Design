@@ -1548,8 +1548,23 @@ textarea:focus {
     padding-right: 0;
   }
 
+  label {
+    font-size: 1.1rem;
+  }
+
   .email-input {
-    padding: 15px;
+    padding: 20px;
+    font-size: 1.1rem;
+  }
+
+  label textarea {
+    padding: 20px;
+    font-size: 1.1rem;
+  }
+
+  .contact-btn {
+    padding: 15px 75px;
+    width: 100%;
   }
 
   /* BT TV Re-Contracting */
