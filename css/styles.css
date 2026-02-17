@@ -232,7 +232,7 @@ p {
 .card:hover .tag {
   background-color: var(--darkgrey);
   color: var(--lightwhite);
-   transition:
+  transition:
     background-color 0.7s ease,
     color 0.7s ease;
 }
