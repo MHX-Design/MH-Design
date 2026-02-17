@@ -73,6 +73,10 @@ p {
   box-shadow: 0px 0px 10px rgba(121, 128, 149, 0.3);
 }
 
+.mar-top-6 {
+  margin-top: var(--6);
+}
+
 .mar-bottom-12 {
   margin-bottom: var(--12);
 }
@@ -208,11 +212,47 @@ p {
   transform: scale(1.05);
 }
 
+.card-tags {
+  display: flex;
+  gap: var(--12);
+  margin-left: var(--12);
+}
+
+.tag {
+  border: solid 1px var(--darkgrey);
+  color: var(--darkgrey);
+  padding: var(--6);
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+}
+
+.card:hover .tag {
+  background-color: var(--darkgrey);
+  color: var(--lightwhite);
+   transition:
+    background-color 0.7s ease,
+    color 0.7s ease;
+}
+.card:hover .tag:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.card:hover .tag:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.card:hover .tag:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
 .card-text {
   display: flex;
   flex-direction: column;
   gap: var(--6);
-  padding: var(--24) var(--24);
+  padding: var(--12) var(--24) var(--24) var(--24);
   background-color: var(--lightwhite);
 }
 
@@ -242,12 +282,24 @@ p {
   transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateZ(0deg) skew(0deg);
   opacity: 0;
   transform-style: preserve-3d;
-  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+  transition:
+    transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
     opacity 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   font-size: 1.5rem;
   color: var(--darkgrey); /* or use var(--midblue) */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
   font-size: 30px;
   font-weight: 400;
 }
