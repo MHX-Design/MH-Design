@@ -1,13 +1,13 @@
 // Project slider functionality
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("projectSlider");
-  
+
   // Only run slider code if container exists (to avoid errors on pages without slider)
   if (container) {
     const leftArrow = document.querySelector(".slider-arrow.left");
     const rightArrow = document.querySelector(".slider-arrow.right");
     const scrollAmount = 424;
-    
+
     // Function to update arrow states
     function updateArrowStates() {
       const scrollLeft = container.scrollLeft;
@@ -67,25 +67,23 @@ document.addEventListener("DOMContentLoaded", function () {
       if (isMobileView()) {
         // Prevent immediate navigation
         event.preventDefault();
-        
+
         // Get the original href to navigate to later
         const href = this.href;
-        
+
         // Add a class to trigger the hover state
         this.classList.add("mobile-clicked");
-        
+
         // Wait for animation to complete, then navigate
         setTimeout(() => {
           // Close the menu
           menu.classList.remove("active");
-          
+
           // Navigate to the page after a short additional delay
           setTimeout(() => {
             window.location.href = href;
           }, 100); // Small additional delay for smooth menu close
-          
         }, 400); // Wait for hover animation (matches your CSS transition duration)
-        
       } else {
         // On desktop, just close the menu normally (no delay needed)
         menu.classList.remove("active");
@@ -99,7 +97,7 @@ document.addEventListener("click", function (event) {
   const menu = document.getElementById("menu");
   const content = document.getElementById("content");
   const hamburgerButton = document.querySelector(".hamburger");
-  
+
   // Check if the menu is currently active
   if (menu.classList.contains("active")) {
     // Check if the click is outside the menu and not on the hamburger button
@@ -113,5 +111,13 @@ document.addEventListener("click", function (event) {
         content.classList.remove("create-margin");
       }
     }
+  }
+});
+// Active nav link
+const navLinks = document.querySelectorAll(".li-nav a");
+navLinks.forEach((link) => {
+  const linkPath = "/" + link.getAttribute("href");
+  if (linkPath === window.location.pathname) {
+    link.classList.add("active");
   }
 });

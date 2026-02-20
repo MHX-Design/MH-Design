@@ -143,6 +143,12 @@ p {
   border: 2px solid var(--darkgrey);
 }
 
+.li-nav a.active {
+  border: 2px solid var(--darkgrey);
+  background-color: var(--darkgrey);
+  color: var(--lightwhite);
+}
+
 .logo-header img {
   width: 85px;
   height: 85px;
