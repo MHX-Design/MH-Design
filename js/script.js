@@ -117,7 +117,12 @@ document.addEventListener("click", function (event) {
 const navLinks = document.querySelectorAll(".li-nav a");
 navLinks.forEach((link) => {
   const linkPath = "/" + link.getAttribute("href");
-  if (linkPath === window.location.pathname) {
+  const currentPath = window.location.pathname;
+
+  if (
+    linkPath === currentPath ||
+    (currentPath === "/" && link.getAttribute("href") === "index.html")
+  ) {
     link.classList.add("active");
   }
 });
