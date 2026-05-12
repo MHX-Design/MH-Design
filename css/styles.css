@@ -97,6 +97,10 @@ p {
   margin-top: var(--48);
 }
 
+.pad-bottom{
+  padding-bottom: var(--12);
+}
+
 .main-content-wrapper {
   flex: 1 0 auto;
 }
