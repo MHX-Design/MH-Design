@@ -64,7 +64,7 @@ const projectsData = [
   {
     slug: "black-moss-shell",
     title: "Black Moss Shell",
-    image: "../assets/Project tiles/bms.webp",
+    image: "../assets/Project tiles/BMS.webp",
     alt: "Gaming project featuring UI/UX, motion graphics, and interactive design",
   },
 ];
