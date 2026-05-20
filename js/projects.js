@@ -61,6 +61,12 @@ const projectsData = [
     image: "../assets/Project tiles/Interior-min.jpg",
     alt: "Interior design for corporate rental showing clean, modern living space",
   },
+  {
+    slug: "black-moss-shell",
+    title: "Black Moss Shell",
+    image: "../assets/Project tiles/bms.webp",
+    alt: "Gaming project featuring UI/UX, motion graphics, and interactive design",
+  },
 ];
 
 function getCurrentProjectSlug() {
@@ -81,7 +87,7 @@ function shuffleArray(array) {
 function loadOtherProjects() {
   const currentSlug = getCurrentProjectSlug();
   const otherProjects = projectsData.filter(
-    (project) => project.slug !== currentSlug
+    (project) => project.slug !== currentSlug,
   );
 
   // Randomize the order of projects
@@ -101,7 +107,7 @@ function loadOtherProjects() {
         <h4 class="other-project-name mid-blue">${project.title}</h4>
       </div>
     </a>
-  `
+  `,
     )
     .join("");
 }
