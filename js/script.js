@@ -126,3 +126,30 @@ navLinks.forEach((link) => {
     link.classList.add("active");
   }
 });
+
+//Play videos when entering viewport
+
+// Lazy autoplay videos — only play when in viewport
+const lazyVideos = document.querySelectorAll("video[autoplay]");
+
+const videoObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        video.play().catch(() => {}); // catch needed for some browsers
+      } else {
+        video.pause();
+      }
+    });
+  },
+  {
+    threshold: 0.25, // play when 25% visible
+  },
+);
+
+lazyVideos.forEach((video) => {
+  video.removeAttribute("autoplay"); // remove autoplay so browser doesn't preload
+  video.setAttribute("preload", "none");
+  videoObserver.observe(video);
+});

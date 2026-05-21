@@ -1379,6 +1379,7 @@ textarea:focus {
   width: fit-content;
   margin: 0 auto;
   justify-items: center;
+  padding: var(--24);
 }
 
 .BMS-Buttons {
@@ -1386,7 +1387,6 @@ textarea:focus {
   height: auto;
   object-fit: contain;
   display: block;
- 
 }
 
 .column {
@@ -1435,6 +1435,7 @@ textarea:focus {
   letter-spacing: 0.12rem;
   text-transform: uppercase;
   opacity: 0.5;
+  margin-bottom: var(--24);
 }
 
 .class-sketches {
@@ -2083,6 +2084,10 @@ textarea:focus {
     padding: var(--12);
   }
 
+  .arrow-text {
+    font-size: 2rem;
+  }
+
   .column {
     padding-left: 0;
   }
@@ -2099,6 +2104,12 @@ textarea:focus {
 
   .grid-4 {
     gap: var(--6);
+    padding: var(--12);
+  }
+
+  .smalltext {
+    font-size: 0.5rem;
+    margin-bottom: var(--12);
   }
 
   .grid-3 {
@@ -2173,5 +2184,8 @@ textarea:focus {
 
   .arrow-white {
     padding: 0 0;
+  }
+  .class-sketches {
+    padding: var(--24) 0;
   }
 }
