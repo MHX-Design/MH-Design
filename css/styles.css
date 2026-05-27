@@ -35,6 +35,17 @@ a {
   transition: all 0.3s ease;
 }
 
+p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+
+h5 {
+  font-size: 1.06rem;
+  font-weight: 500;
+}
+
 .light-white {
   color: var(--lightwhite);
 }
@@ -49,12 +60,6 @@ a {
 
 .mid-blue {
   color: var(--midblue);
-}
-
-p {
-  font-size: 0.95rem;
-  font-weight: 300;
-  line-height: 1.4rem;
 }
 
 .shadow-right {
@@ -373,7 +378,7 @@ p {
   display: flex;
   gap: var(--48);
   padding-top: var(--24);
-  align-items: flex-start;
+  align-items: stretch;
 }
 .about-title {
   font-size: 2rem;
@@ -386,10 +391,9 @@ p {
   width: 100%;
 }
 .p-about {
-  column-count: 2;
-  column-gap: var(--24);
-  column-fill: balance;
-  max-width: 100%;
+  width: 100%;
+  border-right: 1px solid var(--softblue);
+  padding-right: var(--48);
 }
 
 .profile-pic {
@@ -404,6 +408,25 @@ p {
   object-fit: cover;
   border-radius: 5px;
   overflow: hidden;
+}
+.skilltools {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  gap: var(--24);
+}
+.about-skills {
+  display: flex;
+  gap: var(--12);
+}
+
+.listskills {
+  list-style: none;
+  padding: 0;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  white-space: nowrap;
 }
 
 /* Contact */
@@ -1944,6 +1967,20 @@ textarea:focus {
     object-fit: cover;
     border-radius: 5px;
     overflow: hidden;
+  }
+
+  .p-about {
+    width: 100%;
+    border-bottom: 1px solid var(--softblue);
+    padding-bottom: var(--48);
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .skilltools {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: var(--12) 5vw;
   }
 
   /* Projects */
