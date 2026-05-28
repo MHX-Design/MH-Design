@@ -389,12 +389,13 @@ h5 {
 .text-about {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: fit-content;
+  border-right: 1px solid var(--softblue);
 }
 .p-about {
   width: 100%;
-  border-right: 1px solid var(--softblue);
   padding-right: var(--48);
+  max-width: 800px;
 }
 
 .profile-pic {
@@ -567,7 +568,7 @@ textarea:focus {
 
 .contact-socials .social-icons {
   background-color: var(--lightwhite);
-  border: 0.5px solid var(--darkgrey);
+  border: solid 1px rgba(121, 128, 149, 0.3);
   width: 100%;
   padding: 20px 20px;
   border-radius: 2px;
@@ -1759,7 +1760,7 @@ textarea:focus {
 
 .footer .social-icons {
   background-color: var(--lightwhite);
-  border: 0.5px solid var(--darkgrey);
+  border: solid 1px rgba(121, 128, 149, 0.3);
   width: 40px;
   height: 40px;
   border-radius: 2px;
@@ -1792,9 +1793,6 @@ textarea:focus {
 /* Screen size: Mid screen 1200px */
 @media (max-width: 1200px) {
   .p-about {
-    column-count: 1;
-    column-gap: var(--24);
-    column-fill: balance;
     max-width: 100%;
   }
 
@@ -1953,7 +1951,8 @@ textarea:focus {
 
   .text-about {
     max-width: 100%;
-    column-count: 1;
+    border-right: 0;
+    border-bottom: 1px solid var(--softblue);
   }
 
   .profile-pic {
@@ -1972,7 +1971,6 @@ textarea:focus {
 
   .p-about {
     width: 100%;
-    border-bottom: 1px solid var(--softblue);
     padding-bottom: var(--48);
     border-right: none;
     padding-right: 0;
@@ -1982,6 +1980,12 @@ textarea:focus {
     flex-direction: row;
     justify-content: space-between;
     margin: var(--12) 5vw;
+    gap: 0;
+  }
+
+  .about-skills {
+    flex-direction: column;
+    gap: var(--6);
   }
 
   /* Projects */
