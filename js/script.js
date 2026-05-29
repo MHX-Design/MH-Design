@@ -47,7 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function toggleMenu() {
   const menu = document.getElementById("menu");
   const content = document.getElementById("content");
+  const hamburger = document.querySelector(".hamburger");
   menu.classList.toggle("active");
+  hamburger.classList.toggle("is-open");
   content.classList.toggle("create-margin");
 }
 
@@ -107,6 +109,7 @@ document.addEventListener("click", function (event) {
       !hamburgerButton.contains(event.target)
     ) {
       menu.classList.remove("active");
+      document.querySelector(".hamburger").classList.remove("is-open");
       if (content) {
         content.classList.remove("create-margin");
       }
