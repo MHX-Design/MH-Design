@@ -1862,6 +1862,7 @@ textarea:focus {
     cursor: pointer;
     gap: 5px;
     display: flex;
+    user-select: none;
   }
 
   /*.hamburger .bar {
