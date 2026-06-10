@@ -1,3 +1,18 @@
+:root {
+  --lightwhite: #fbfcff;
+  --darkgrey: #363636;
+  --blackgrey: #202020;
+  --softblue: #dbdfec;
+  --midblue: #798095;
+  --6: 6px;
+  --12: 12px;
+  --24: 24px;
+  --48: 48px;
+  --72: 72px;
+  --96: 96px;
+  --left-right-padding: 20vw;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,21 +29,6 @@ body {
 body {
   display: flex;
   flex-direction: column;
-}
-
-:root {
-  --lightwhite: #fbfcff;
-  --darkgrey: #363636;
-  --blackgrey: #202020;
-  --softblue: #dbdfec;
-  --midblue: #798095;
-  --6: 6px;
-  --12: 12px;
-  --24: 24px;
-  --48: 48px;
-  --72: 72px;
-  --96: 96px;
-  --left-right-padding: 20vw;
 }
 
 a {
