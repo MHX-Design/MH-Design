@@ -1404,6 +1404,7 @@ textarea:focus {
   text-align: center;
   padding-top: var(--12);
   color: var(--midblue);
+  font-weight: 400;
 }
 
 .grey-container {
