@@ -340,13 +340,15 @@ h5 {
 
 .card-heading {
   font-size: 1.7rem;
-  line-height: 2 rem;
+  line-height: 2rem;
   font-weight: 400;
-  transition: all 0.3s ease;
+  transition:
+    all 0.2s ease,
+    transform 0.2s ease;
 }
 
 .card:hover .card-heading {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .card:hover .card-body {
@@ -638,7 +640,7 @@ textarea:focus {
 .project-title {
   margin: var(--48) 0 var(--12) 0;
   font-size: 1.7rem;
-  font-weight: 400;
+  font-weight: 300;
   padding-top: var(--12);
   border-top: 1px solid var(--midblue);
   border-radius: 5px;
@@ -1844,7 +1846,6 @@ textarea:focus {
 @media (max-width: 768px) {
   p {
     font-size: 1rem;
-    font-weight: 300;
     line-height: 1.5rem;
   }
 
