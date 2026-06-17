@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-VariableFont_wdth\,wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --lightwhite: #fbfcff;
   --darkgrey: #363636;
@@ -352,11 +369,11 @@ h5 {
     opacity 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   color: var(--darkgrey); /* or use var(--midblue) */
   font-family:
+    Roboto,
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
     Segoe UI,
-    Roboto,
     Oxygen,
     Ubuntu,
     Cantarell,
@@ -1016,11 +1033,11 @@ textarea:focus {
 
 .newtab {
   font-family:
+    Roboto,
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
     Segoe UI,
-    Roboto,
     Oxygen,
     Ubuntu,
     Cantarell,
@@ -1344,7 +1361,7 @@ textarea:focus {
 
 .arrow-text {
   font-size: 3rem;
-  font-family: roboto;
+  font-family: Roboto;
   color: var(--darkgrey);
   padding-top: var(--24);
   padding-bottom: var(--24);
