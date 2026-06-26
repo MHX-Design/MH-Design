@@ -156,3 +156,10 @@ lazyVideos.forEach((video) => {
   video.setAttribute("preload", "none");
   videoObserver.observe(video);
 });
+
+// Motion word letter animation
+document.querySelectorAll('.motion-word').forEach(el => {
+  el.innerHTML = [...el.textContent].map((char, i) =>
+    `<span style="animation-delay:${i * 0.15}s">${char}</span>`
+  ).join('');
+});

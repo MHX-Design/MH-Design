@@ -208,6 +208,27 @@ h5 {
   font-weight: 200;
   line-height: 3rem;
 }
+.motion-word {
+  white-space: nowrap;
+}
+
+@keyframes letter-fade {
+  0% {
+    color: var(--midblue);
+  }
+  30% {
+    color: rgb(216, 229, 239);
+  }
+  60%,
+  100% {
+    color: var(--midblue);
+  }
+}
+
+.motion-word span {
+  display: inline-block;
+  animation: letter-fade 3s ease-in-out infinite;
+}
 
 .page-title {
   font-size: 53px;
