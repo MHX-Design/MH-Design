@@ -254,7 +254,10 @@ h5 {
   text-decoration: none;
   border-radius: var(--12);
   overflow: hidden;
-  border-bottom: solid 4px var(--softblue);
+  border-bottom: solid 2px var(--softblue);
+  border-top: solid 1px var(--softblue);
+  border-left: solid 1px var(--softblue);
+  border-right: solid 1px var(--softblue);
   flex: 1 1 400px;
   position: relative;
 }
@@ -282,7 +285,8 @@ h5 {
 .card-tags {
   display: flex;
   gap: var(--12);
-  margin-left: var(--12);
+  margin-left: var(--24);
+  margin-top: var(--24);
 }
 
 .tag {
@@ -354,8 +358,8 @@ h5 {
 .card-text {
   display: flex;
   flex-direction: column;
-  gap: var(--6);
-  padding: var(--12) var(--24) var(--24) var(--24);
+  gap: var(--12);
+  padding: var(--24);
   background-color: var(--lightwhite);
 }
 
