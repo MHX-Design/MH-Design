@@ -99,7 +99,7 @@ function loadOtherProjects() {
   container.innerHTML = randomizedProjects
     .map(
       (project) => `
-    <a href="../projects/${project.slug}.html">
+    <a href="../projects/${project.slug}">
       <div class="other-card">
         <div class="op-img-container">
           <img src="${project.image}" alt="${project.alt}">
