@@ -20,7 +20,7 @@ const projectsData = [
     alt: "BT campaign visual showcasing mobile and broadband branding elements",
   },
   {
-    slug: "itv-showreel",
+    slug: "itv",
     title: "ITV Showreel",
     image: "../assets/Project tiles/itv.webp",
     alt: "ITV Showreel montage featuring broadcast and set design highlights",
