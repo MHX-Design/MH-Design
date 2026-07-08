@@ -119,13 +119,11 @@ document.addEventListener("click", function (event) {
 // Active nav link
 const navLinks = document.querySelectorAll(".li-nav a");
 navLinks.forEach((link) => {
-  const linkPath = "/" + link.getAttribute("href");
+  const href = link.getAttribute("href");
+  const linkPath = href === "/" ? "/" : "/" + href;
   const currentPath = window.location.pathname;
 
-  if (
-    linkPath === currentPath ||
-    (currentPath === "/" && link.getAttribute("href") === "index.html")
-  ) {
+  if (linkPath === currentPath) {
     link.classList.add("active");
   }
 });
@@ -158,8 +156,10 @@ lazyVideos.forEach((video) => {
 });
 
 // Motion word letter animation
-document.querySelectorAll('.motion-word').forEach(el => {
-  el.innerHTML = [...el.textContent].map((char, i) =>
-    `<span style="animation-delay:${i * 0.15}s">${char}</span>`
-  ).join('');
+document.querySelectorAll(".motion-word").forEach((el) => {
+  el.innerHTML = [...el.textContent]
+    .map(
+      (char, i) => `<span style="animation-delay:${i * 0.15}s">${char}</span>`,
+    )
+    .join("");
 });
