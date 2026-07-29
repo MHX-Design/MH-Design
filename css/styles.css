@@ -327,6 +327,7 @@ h5 {
   color: var(--lightwhite);
   z-index: 1;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  visibility: hidden;
 }
 
 .new-tag p {
