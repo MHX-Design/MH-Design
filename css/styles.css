@@ -21,6 +21,7 @@
   --blackgrey: #202020;
   --softblue: #dbdfec;
   --midblue: #798095;
+  --darkmidgrey: #6d6e71;
   --6: 6px;
   --12: 12px;
   --24: 24px;
@@ -78,6 +79,10 @@ h5 {
 
 .mid-blue {
   color: var(--midblue);
+}
+
+.darkmidgrey {
+  color: var(--darkmidgrey);
 }
 
 .shadow-right {
@@ -234,8 +239,47 @@ h5 {
   font-size: 53px;
   font-weight: 800;
   border-top: 5px solid;
-  padding-top: var(--6);
-  padding-bottom: var(--48);
+  padding-top: var(--24);
+  padding-bottom: var(--24);
+}
+
+.overview-container {
+  border-top: 0.5px solid var(--midblue);
+  padding-top: var(--24);
+  margin-bottom: var(--48);
+}
+
+.overview {
+  display: flex;
+  gap: clamp(12px, 3vw, 48px);
+  width: 100%;
+}
+
+.overview-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--6);
+  flex: 0 0 auto;
+}
+
+.overview-text:first-child {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.overview-text:nth-child(4) {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.overview-subhead {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--darkgrey);
+}
+
+.overview-body {
+  color: var(--darkmidgrey);
 }
 
 .card-container {
@@ -1117,8 +1161,6 @@ textarea:focus {
   display: flex;
   width: 100%;
   margin-bottom: var(--6);
-  padding: var(--6);
-  background-color: var(--blackgrey);
   gap: 3px;
   border-radius: 6px;
 }
@@ -1127,6 +1169,7 @@ textarea:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 0.3vw;
 }
 
 .more-work:hover {
@@ -2039,6 +2082,20 @@ textarea:focus {
     }
   }
 
+  .overview {
+    flex-direction: column;
+  }
+
+  .overview-text:first-child {
+    flex: 0;
+    max-width: 100%;
+  }
+
+  .overview-text:nth-child(4) {
+    flex: 0;
+    max-width: 100%;
+  }
+
   /* About */
 
   .about {
@@ -2204,9 +2261,7 @@ textarea:focus {
   }
 
   /* VFS */
-  .vfs-row {
-    padding: 3px;
-  }
+
 
   /* BMS */
 
