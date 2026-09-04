@@ -1483,6 +1483,39 @@ textarea:focus {
   padding: var(--24);
 }
 
+.bms-colours {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* bigger screens: all 6 on one row */
+  gap: 4px;
+}
+
+.bms-colour {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: var(--12);
+  /* no width needed — grid controls sizing now */
+}
+.bms-colour-line {
+  width: 30%;
+  border: none;
+  border-top: 1px solid;
+}
+
+.bms-colour-name {
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1rem;
+}
+
+.bms-colour-code {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--lightwhite);
+  letter-spacing: 0.05rem;
+}
+
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -2330,6 +2363,13 @@ textarea:focus {
     min-width: 0;
     max-width: 100%;
     height: auto;
+  }
+
+  .bms-colours {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* bigger screens: all 6 on one row */
   }
 
   /* Footer */
