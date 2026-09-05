@@ -1487,6 +1487,10 @@ textarea:focus {
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* bigger screens: all 6 on one row */
   gap: 4px;
+  padding-bottom: 3px;
+    padding-top: 3px;
+  border-bottom: 1px rgb(194, 194, 194) solid;
+   border-top: 1px rgb(194, 194, 194) solid;
 }
 
 .bms-colour {
