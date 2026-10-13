@@ -1761,8 +1761,8 @@ textarea:focus {
   bottom: 0;
   left: 0;
   width: 0; /* Start with no width */
-  height: 2px; /* Line thickness */
-  background-color: var(--darkgrey); /* Line color */
+  height: 1px; /* Line thickness */
+  background-color: var(--darkmidgrey); /* Line color */
   transition: width 0.25s cubic-bezier(0.5, 0.15, 0.25, 1); /* Ease in-out animation */
 }
 
