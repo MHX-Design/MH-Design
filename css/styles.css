@@ -307,7 +307,10 @@ h5 {
 }
 
 .card:hover {
-  box-shadow: 0px 0px 25px rgba(121, 128, 149, 0.15);
+  border-top: 1px solid var(--midblue);
+  border-bottom: 2px solid var(--midblue);
+  border-left: 1px solid var(--midblue);
+  border-right: 1px solid var(--midblue);
 }
 
 .card-img {
